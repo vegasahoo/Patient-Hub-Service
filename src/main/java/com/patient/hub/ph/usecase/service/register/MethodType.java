@@ -8,12 +8,4 @@ public enum MethodType {
     CREATE,
     UPDATE,
     DELETE;
-
-    public static MethodType value(String input) {
-        return Arrays.stream(MethodType.values())
-                .filter(v -> v.name().equalsIgnoreCase(input))
-                .findAny()
-                .orElseThrow(
-                        () -> new IllegalArgumentException("Invalid type in eventHeader of consumed event"));
-    }
 }

@@ -19,15 +19,6 @@ public class CreatePatientCommandService extends BaseCommandService {
         this.objectMapper = objectMapper;
     }
 
-    public CreatePatientCommand createCommand(String createPatientRequest){
-        try {
-            Patient patient = objectMapper.readValue(createPatientRequest, Patient.class);
-            return new CreatePatientCommand(patient);
-        } catch (Exception ex){
-            throw new MyCustomException(ex.getMessage());
-        }
-    }
-
     @Override
     public BaseCommand createCommand(String... createPatientRequest) {
         try {
