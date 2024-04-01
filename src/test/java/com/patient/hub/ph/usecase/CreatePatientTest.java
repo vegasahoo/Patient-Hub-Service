@@ -24,7 +24,7 @@ class CreatePatientTest {
         Patient patient = new Patient();
         CreatePatientCommand command = new CreatePatientCommand(patient);
         Mockito.when(patientRepo.registerPatient(patient)).thenReturn(patient);
-        createPatient.createPatient(command);
+        createPatient.handle(command);
         Mockito.verify(patientRepo).registerPatient(patient);
     }
 }

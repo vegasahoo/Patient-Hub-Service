@@ -30,7 +30,7 @@ class GetPatientTest {
         Patient patient = new Patient();
         GetPatientCommand getPatientCommand = new GetPatientCommand(new PatientId("testId"));
         Mockito.when(patientRepo.getPatientById("testId")).thenReturn(patient);
-        Assertions.assertNotNull(getPatient.getPatientById(getPatientCommand));
+        Assertions.assertNotNull(getPatient.handle(getPatientCommand));
     }
 
     @Test

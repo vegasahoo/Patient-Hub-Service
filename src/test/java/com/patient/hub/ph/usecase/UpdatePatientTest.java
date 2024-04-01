@@ -26,8 +26,8 @@ class UpdatePatientTest {
         UpdatePatientCommand updatePatientCommand = new UpdatePatientCommand(new PatientId("testId"), patient);
         UpdatePatientCommand dischargeCommand = new UpdatePatientCommand(new PatientId("testId"), null);
         Mockito.when(patientRepo.updatePatientData("testId", patient)).thenReturn(patient);
-        updatePatient.updatePatient(updatePatientCommand);
-        updatePatient.updatePatient(dischargeCommand);
+        updatePatient.handle(updatePatientCommand);
+        updatePatient.handle(dischargeCommand);
         Mockito.verify(patientRepo).updatePatientData("testId",patient);
         Mockito.verify(patientRepo).dischargePatient("testId");
     }

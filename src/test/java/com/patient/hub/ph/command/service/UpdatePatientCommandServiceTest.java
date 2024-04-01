@@ -18,13 +18,13 @@ class UpdatePatientCommandServiceTest {
 
     @Test
     void createCommandTest(){
-        UpdatePatientCommand command = updatePatientCommandService.createCommand("testId", testData);
-        Assertions.assertNotNull(command.patient());
+        UpdatePatientCommand command = (UpdatePatientCommand) updatePatientCommandService.createCommand("testId", testData);
+        Assertions.assertNotNull(command.getPatient());
     }
 
     @Test
     void createCommandWithDischargeStatusTest(){
-        UpdatePatientCommand command = updatePatientCommandService.createCommand("testId", null);
-        Assertions.assertNotNull(command.patientId());
+        UpdatePatientCommand command = (UpdatePatientCommand) updatePatientCommandService.createCommand("testId", null);
+        Assertions.assertNotNull(command.getPatientId());
     }
 }

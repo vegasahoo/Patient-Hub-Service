@@ -18,8 +18,8 @@ class DeletePatientCommandServiceTest {
     @Test
     void createCommandTest(){
         Mockito.when(deletePatientCommandService.createCommand(Mockito.anyString())).thenCallRealMethod();
-        DeletePatientCommand command = deletePatientCommandService.createCommand("testPatientId");
-        Assertions.assertNotNull(command.patientId());
+        DeletePatientCommand command = (DeletePatientCommand) deletePatientCommandService.createCommand("testPatientId");
+        Assertions.assertNotNull(command.getPatientId());
     }
 
     @Test

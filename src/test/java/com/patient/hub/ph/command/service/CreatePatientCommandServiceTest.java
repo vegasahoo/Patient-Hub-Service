@@ -20,7 +20,7 @@ class CreatePatientCommandServiceTest {
     @Test
     void createCommandTest(){
         CreatePatientCommand command = createPatientCommandService.createCommand(testData);
-        Assertions.assertNotNull(command.patient());
+        Assertions.assertNotNull(command.getPatient());
     }
 
     @Test

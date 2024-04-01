@@ -8,7 +8,7 @@ import java.util.Map;
 
 @Component
 public class CommandRegister {
-    private static final Map<MethodType, BaseCommandService>
+    public static final Map<MethodType, BaseCommandService>
             MAPPER_SERVICE_MAP = new HashMap<>();
 
     public static void add(

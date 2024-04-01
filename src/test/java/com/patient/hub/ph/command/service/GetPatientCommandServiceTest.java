@@ -18,8 +18,8 @@ class GetPatientCommandServiceTest {
     @Test
     void createCommandTest(){
         Mockito.when(getPatientCommandService.createCommand(Mockito.anyString())).thenCallRealMethod();
-        GetPatientCommand command = getPatientCommandService.createCommand("testPatientId");
-        Assertions.assertNotNull(command.patientId());
+        GetPatientCommand command = (GetPatientCommand) getPatientCommandService.createCommand("testPatientId");
+        Assertions.assertNotNull(command.getPatientId());
     }
 
     @Test

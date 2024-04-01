@@ -21,7 +21,7 @@ class DeletePatientTest {
     @Test
     void deletePatientById(){
         DeletePatientCommand command = new DeletePatientCommand(new PatientId("testId"));
-        deletePatient.deletePatientById(command);
+        deletePatient.handle(command);
         Mockito.verify(patientRepo).deletePatientById("testId");
     }
 

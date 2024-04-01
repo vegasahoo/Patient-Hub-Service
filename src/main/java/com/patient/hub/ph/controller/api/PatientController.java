@@ -2,6 +2,7 @@ package com.patient.hub.ph.controller.api;
 
 import com.patient.hub.ph.command.model.*;
 import com.patient.hub.ph.command.register.CommandRegister;
+import com.patient.hub.ph.command.service.GetPatientCommandService;
 import com.patient.hub.ph.controller.response.Patients;
 import com.patient.hub.ph.command.vo.Patient;
 import com.patient.hub.ph.usecase.service.*;
@@ -18,6 +19,7 @@ public class PatientController {
 
     @GetMapping(value = "/get-patient")
     public Patients getPatientData(@RequestParam String patientId){
+        System.out.println(CommandRegister.MAPPER_SERVICE_MAP.values());
         GetPatientCommand getPatientCommand = (GetPatientCommand) CommandRegister
                 .get(com.patient.hub.ph.command.register.MethodType.GET).createCommand(patientId);
         ArrayList<Patient> patients = new ArrayList<>();
