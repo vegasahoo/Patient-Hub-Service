@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Table(name = "patient")
 @Getter
 @Setter
-public class Patient {
+public class Patient implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String patientId;

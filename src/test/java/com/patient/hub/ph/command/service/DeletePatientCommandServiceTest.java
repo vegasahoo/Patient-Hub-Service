@@ -1,6 +1,7 @@
 package com.patient.hub.ph.command.service;
 
-import com.patient.hub.ph.command.model.DeletePatientCommand;
+import com.patient.hub.ph.command.model.patient.DeletePatientCommand;
+import com.patient.hub.ph.command.service.patient.DeletePatientCommandService;
 import com.patient.hub.ph.exception.InsufficientDataException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

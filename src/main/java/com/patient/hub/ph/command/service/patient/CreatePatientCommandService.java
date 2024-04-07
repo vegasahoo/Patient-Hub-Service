@@ -1,10 +1,11 @@
-package com.patient.hub.ph.command.service;
+package com.patient.hub.ph.command.service.patient;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.patient.hub.ph.command.model.BaseCommand;
-import com.patient.hub.ph.command.model.CreatePatientCommand;
+import com.patient.hub.ph.command.model.patient.CreatePatientCommand;
 import com.patient.hub.ph.command.register.CommandRegister;
 import com.patient.hub.ph.command.register.MethodType;
+import com.patient.hub.ph.command.service.BaseCommandService;
 import com.patient.hub.ph.command.vo.Patient;
 import com.patient.hub.ph.exception.MyCustomException;
 import org.springframework.stereotype.Component;

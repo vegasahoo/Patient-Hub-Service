@@ -1,7 +1,8 @@
 package com.patient.hub.ph.command.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.patient.hub.ph.command.model.CreatePatientCommand;
+import com.patient.hub.ph.command.model.patient.CreatePatientCommand;
+import com.patient.hub.ph.command.service.patient.CreatePatientCommandService;
 import com.patient.hub.ph.exception.MyCustomException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

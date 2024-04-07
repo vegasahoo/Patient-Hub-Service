@@ -1,23 +1,23 @@
 package com.patient.hub.ph.controller.api;
 
-import com.patient.hub.ph.command.model.CreatePatientCommand;
-import com.patient.hub.ph.command.model.DeletePatientCommand;
-import com.patient.hub.ph.command.model.GetPatientCommand;
-import com.patient.hub.ph.command.model.UpdatePatientCommand;
+import com.patient.hub.ph.command.model.patient.CreatePatientCommand;
+import com.patient.hub.ph.command.model.patient.DeletePatientCommand;
+import com.patient.hub.ph.command.model.patient.GetPatientCommand;
+import com.patient.hub.ph.command.model.patient.UpdatePatientCommand;
 import com.patient.hub.ph.command.register.CommandRegister;
-import com.patient.hub.ph.command.service.CreatePatientCommandService;
-import com.patient.hub.ph.command.service.DeletePatientCommandService;
-import com.patient.hub.ph.command.service.GetPatientCommandService;
-import com.patient.hub.ph.command.service.UpdatePatientCommandService;
+import com.patient.hub.ph.command.service.patient.CreatePatientCommandService;
+import com.patient.hub.ph.command.service.patient.DeletePatientCommandService;
+import com.patient.hub.ph.command.service.patient.GetPatientCommandService;
+import com.patient.hub.ph.command.service.patient.UpdatePatientCommandService;
 import com.patient.hub.ph.command.vo.Patient;
 import com.patient.hub.ph.command.vo.PatientId;
 import com.patient.hub.ph.exception.MyCustomException;
-import com.patient.hub.ph.usecase.service.CreatePatient;
-import com.patient.hub.ph.usecase.service.DeletePatient;
-import com.patient.hub.ph.usecase.service.GetPatient;
-import com.patient.hub.ph.usecase.service.UpdatePatient;
+import com.patient.hub.ph.usecase.service.patient.CreatePatient;
+import com.patient.hub.ph.usecase.service.patient.DeletePatient;
+import com.patient.hub.ph.usecase.service.patient.GetPatient;
+import com.patient.hub.ph.usecase.service.patient.UpdatePatient;
 import com.patient.hub.ph.usecase.service.register.MethodType;
-import com.patient.hub.ph.usecase.service.register.UsecaseRegister;
+import com.patient.hub.ph.usecase.service.register.PatientUseCaseRegister;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -55,10 +55,10 @@ class PatientControllerTest {
 
     @BeforeEach
     void setUp(){
-        UsecaseRegister.add(MethodType.GET, getPatientService);
-        UsecaseRegister.add(MethodType.CREATE, createPatientService);
-        UsecaseRegister.add(MethodType.UPDATE, updatePatientService);
-        UsecaseRegister.add(MethodType.DELETE, deletePatientService);
+        PatientUseCaseRegister.add(MethodType.GET, getPatientService);
+        PatientUseCaseRegister.add(MethodType.CREATE, createPatientService);
+        PatientUseCaseRegister.add(MethodType.UPDATE, updatePatientService);
+        PatientUseCaseRegister.add(MethodType.DELETE, deletePatientService);
         CommandRegister.add(com.patient.hub.ph.command.register.MethodType.GET, getPatientCommandService);
         CommandRegister.add(com.patient.hub.ph.command.register.MethodType.CREATE, createPatientCommandService);
         CommandRegister.add(com.patient.hub.ph.command.register.MethodType.UPDATE, updatePatientCommandService);

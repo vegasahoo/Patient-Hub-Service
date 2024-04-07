@@ -1,6 +1,8 @@
 package com.patient.hub.ph.repository;
 
 import com.patient.hub.ph.command.vo.Patient;
+import com.patient.hub.ph.repository.patient.IPatientDBRepo;
+import com.patient.hub.ph.repository.patient.PatientDBRepoImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

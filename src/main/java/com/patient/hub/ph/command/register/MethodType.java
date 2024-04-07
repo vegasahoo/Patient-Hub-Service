@@ -7,5 +7,7 @@ public enum MethodType {
     GET,
     CREATE,
     UPDATE,
-    DELETE;
+    DELETE,
+    CREATEUSER,
+    GETUSER;
 }

@@ -1,10 +1,10 @@
 package com.patient.hub.ph.usecase;
 
-import com.patient.hub.ph.command.model.UpdatePatientCommand;
+import com.patient.hub.ph.command.model.patient.UpdatePatientCommand;
 import com.patient.hub.ph.command.vo.Patient;
 import com.patient.hub.ph.command.vo.PatientId;
 import com.patient.hub.ph.usecase.port.IPatientRepo;
-import com.patient.hub.ph.usecase.service.UpdatePatient;
+import com.patient.hub.ph.usecase.service.patient.UpdatePatient;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

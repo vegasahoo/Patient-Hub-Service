@@ -1,9 +1,10 @@
-package com.patient.hub.ph.command.service;
+package com.patient.hub.ph.command.service.patient;
 
 import com.patient.hub.ph.command.model.BaseCommand;
-import com.patient.hub.ph.command.model.DeletePatientCommand;
+import com.patient.hub.ph.command.model.patient.DeletePatientCommand;
 import com.patient.hub.ph.command.register.CommandRegister;
 import com.patient.hub.ph.command.register.MethodType;
+import com.patient.hub.ph.command.service.BaseCommandService;
 import com.patient.hub.ph.command.vo.PatientId;
 import com.patient.hub.ph.exception.InsufficientDataException;
 import org.springframework.stereotype.Component;

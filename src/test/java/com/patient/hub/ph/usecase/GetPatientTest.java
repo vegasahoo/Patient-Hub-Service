@@ -1,10 +1,10 @@
 package com.patient.hub.ph.usecase;
 
-import com.patient.hub.ph.command.model.GetPatientCommand;
+import com.patient.hub.ph.command.model.patient.GetPatientCommand;
 import com.patient.hub.ph.command.vo.Patient;
 import com.patient.hub.ph.command.vo.PatientId;
 import com.patient.hub.ph.usecase.port.IPatientRepo;
-import com.patient.hub.ph.usecase.service.GetPatient;
+import com.patient.hub.ph.usecase.service.patient.GetPatient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

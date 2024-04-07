@@ -1,7 +1,7 @@
-package com.patient.hub.ph.usecase.service;
+package com.patient.hub.ph.usecase.service.patient;
 
 
-import com.patient.hub.ph.command.model.CreatePatientCommand;
+import com.patient.hub.ph.command.model.patient.CreatePatientCommand;
 import com.patient.hub.ph.usecase.port.IPatientRepo;
 import com.patient.hub.ph.usecase.service.register.MethodType;
 import org.springframework.stereotype.Component;

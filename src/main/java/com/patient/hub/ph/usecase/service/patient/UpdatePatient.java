@@ -1,13 +1,13 @@
-package com.patient.hub.ph.usecase.service;
+package com.patient.hub.ph.usecase.service.patient;
 
 
-import com.patient.hub.ph.command.model.UpdatePatientCommand;
+import com.patient.hub.ph.command.model.patient.UpdatePatientCommand;
 import com.patient.hub.ph.usecase.port.IPatientRepo;
 import com.patient.hub.ph.usecase.service.register.MethodType;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UpdatePatient extends PatientService<UpdatePatientCommand>{
+public class UpdatePatient extends PatientService<UpdatePatientCommand> {
 
     public UpdatePatient(IPatientRepo patientRepo) {
         super(patientRepo, MethodType.UPDATE);

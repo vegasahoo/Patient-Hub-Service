@@ -1,6 +1,6 @@
-package com.patient.hub.ph.usecase.service;
+package com.patient.hub.ph.usecase.service.patient;
 
-import com.patient.hub.ph.command.model.GetPatientCommand;
+import com.patient.hub.ph.command.model.patient.GetPatientCommand;
 import com.patient.hub.ph.command.vo.Patient;
 import com.patient.hub.ph.usecase.port.IPatientRepo;
 import com.patient.hub.ph.usecase.service.register.MethodType;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class GetPatient extends PatientService<GetPatientCommand>{
+public class GetPatient extends PatientService<GetPatientCommand> {
     public GetPatient(IPatientRepo patientRepo) {
         super(patientRepo, MethodType.GET );
     }

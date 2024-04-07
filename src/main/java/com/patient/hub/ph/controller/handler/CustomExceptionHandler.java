@@ -1,6 +1,7 @@
 package com.patient.hub.ph.controller.handler;
 
 import com.patient.hub.ph.exception.AbstractException;
+import com.patient.hub.ph.exception.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

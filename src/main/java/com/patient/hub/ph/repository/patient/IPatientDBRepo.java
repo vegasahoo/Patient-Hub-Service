@@ -1,4 +1,4 @@
-package com.patient.hub.ph.repository;
+package com.patient.hub.ph.repository.patient;
 
 import com.patient.hub.ph.command.vo.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;

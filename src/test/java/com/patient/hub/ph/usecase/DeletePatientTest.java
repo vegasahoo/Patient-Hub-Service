@@ -1,9 +1,9 @@
 package com.patient.hub.ph.usecase;
 
-import com.patient.hub.ph.command.model.DeletePatientCommand;
+import com.patient.hub.ph.command.model.patient.DeletePatientCommand;
 import com.patient.hub.ph.command.vo.PatientId;
 import com.patient.hub.ph.usecase.port.IPatientRepo;
-import com.patient.hub.ph.usecase.service.DeletePatient;
+import com.patient.hub.ph.usecase.service.patient.DeletePatient;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

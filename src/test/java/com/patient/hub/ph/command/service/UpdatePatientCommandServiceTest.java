@@ -1,7 +1,8 @@
 package com.patient.hub.ph.command.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.patient.hub.ph.command.model.UpdatePatientCommand;
+import com.patient.hub.ph.command.model.patient.UpdatePatientCommand;
+import com.patient.hub.ph.command.service.patient.UpdatePatientCommandService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

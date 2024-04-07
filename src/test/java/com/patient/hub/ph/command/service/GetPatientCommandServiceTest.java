@@ -1,6 +1,7 @@
 package com.patient.hub.ph.command.service;
 
-import com.patient.hub.ph.command.model.GetPatientCommand;
+import com.patient.hub.ph.command.model.patient.GetPatientCommand;
+import com.patient.hub.ph.command.service.patient.GetPatientCommandService;
 import com.patient.hub.ph.exception.InsufficientDataException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
